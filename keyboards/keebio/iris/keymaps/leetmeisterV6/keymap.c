@@ -65,10 +65,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                          KC_LGUI, T_LT1_DEL, KC_SPC,       /*...*/            KC_ENT, T_LT1_BSP, T_TD_ESC
         ),
     [_LOWER] = LAYOUT(
-        KC_ESC,    KC_F1,     KC_F2,   KC_F3,   KC_F4,   KC_F5,            /*...*/          KC_F6,     T_TD_F7_2, KC_F8,    KC_F9,    KC_F10,  KC_PAUS,
-        _LA_TAB_,  KC_BSPC,   KC_HOME, KC_UP,   KC_PGUP, KC_F11,           /*...*/          KC_F12,    KC_LOCK,   KC_MS_U,  KC_WH_U,  KC_BTN3, T_OS_RALT,
-        T_LA_CAPS, T_LT2_PS,  KC_LEFT, KC_DOWN, KC_RGHT, KC_PENT,          /*...*/          T_ALT_LFT, KC_MS_L,   KC_MS_D,  KC_MS_R,  KC_BTN1, T_OS_RCTL,
-        T_OS_LSFT, _______,   KC_END,  _______, KC_PGDN, KC_INS,  _______, /*...*/ _______, T_ALT_RT,  KC_WH_L,   KC_WH_R,  KC_WH_D,  KC_BTN2, T_OS_RSFT,
+        KC_ESC,    KC_F1,     KC_F2,   KC_F3,   KC_F4,   KC_F5,            /*...*/          KC_F6,   T_TD_F7_2,  KC_F8,    KC_F9,    KC_F10,  KC_PAUS,
+        _LA_TAB_,  KC_BSPC,   KC_HOME, KC_UP,   KC_PGUP, KC_F11,           /*...*/          KC_F12,  KC_MS_BTN4, KC_MS_U,  KC_WH_U,  KC_BTN3, T_OS_RALT,
+        T_LA_CAPS, T_LT2_PS,  KC_LEFT, KC_DOWN, KC_RGHT, KC_PENT,          /*...*/          KC_WBAK, KC_MS_L,    KC_MS_D,  KC_MS_R,  KC_BTN1, T_OS_RCTL,
+        T_OS_LSFT, _______,   KC_END,  _______, KC_PGDN, KC_INS,  _______, /*...*/ _______, KC_WFWD, KC_WH_L,    KC_WH_R,  KC_WH_D,  KC_BTN2, T_OS_RSFT,
                                        _______, _______, _______,          /*...*/          _______, _______, _______
         ),
     [_RAISE] = LAYOUT(
