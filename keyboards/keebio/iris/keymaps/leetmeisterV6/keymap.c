@@ -74,7 +74,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_RAISE] = LAYOUT(
         _______, _______, _______,   _______,   T_ALT_F4, T_ALT_F8,         /*...*/          T_ALT_PSC, T_TD_NL_2, KC_PSLS, KC_PAST, KC_ESC,  KC_CALC,
         _______, _______, _______,   T_ALT_UP,  _______,  _______,          /*...*/          KC_PSCR,   KC_7,      KC_8,    KC_9,    KC_PMNS, _______,
-        _______, _______, T_ALT_LFT, T_ALT_DWN, T_ALT_RT, _______,          /*...*/          KC_SLCK,   KC_4,      KC_5,    KC_6,    KC_PPLS, _______,
+        _______, _______, T_ALT_LFT, T_ALT_DWN, T_ALT_RT, _______,          /*...*/          KC_SCRL,   KC_4,      KC_5,    KC_6,    KC_PPLS, _______,
         _______, _______, _______,   _______,   _______,  _______, _______, /*...*/ _______, KC_PCMM,   KC_1,      KC_2,    KC_3,    KC_PENT, _______,
                                        _______, _______, _______,           /*...*/           KC_0,  _______,  KC_DOT
         ),
@@ -217,7 +217,7 @@ static void td_esc_unmod_reset(qk_tap_dance_state_t *state, void *user_data) { u
 // All tap dance functions would go here.
 qk_tap_dance_action_t tap_dance_actions[] = {
     [TD_F7_RAISE]   = ACTION_TAP_DANCE_LAYER_TOGGLE(KC_F7, _RAISE),
-    [TD_NLCK_RAISE] = ACTION_TAP_DANCE_LAYER_TOGGLE(KC_NLCK, _RAISE),
+    [TD_NLCK_RAISE] = ACTION_TAP_DANCE_LAYER_TOGGLE(KC_NUM, _RAISE),
     [TD_ESC_UNMOD]  = ACTION_TAP_DANCE_FN_ADVANCED(NULL, td_esc_unmod_finished, td_esc_unmod_reset),
     [TD_OTT_ADJUST] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, td_ott_adjust_finished, td_ott_adjust_reset),
 };
